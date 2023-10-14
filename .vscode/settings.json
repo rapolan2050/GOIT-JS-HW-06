@@ -2,5 +2,6 @@
     "editor.tokenColorCustomizations": {
         "comments": "",
         "textMateRules": []
-    }
+    },
+    "livePreview.defaultPreviewPath": "/task-02.html"
 }
