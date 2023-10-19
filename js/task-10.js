@@ -1,9 +1,9 @@
 // Obtener los elementos necesarios
-var controlsDiv = document.getElementById('controls');
-var inputNumber = controlsDiv.querySelector('input');
-var createButton = controlsDiv.querySelector('[data-create]');
-var destroyButton = controlsDiv.querySelector('[data-destroy]');
-var boxesDiv = document.getElementById('boxes');
+const controlsDiv = document.getElementById('controls');
+const inputNumber = controlsDiv.querySelector('input');
+const createButton = controlsDiv.querySelector('[data-create]');
+const destroyButton = controlsDiv.querySelector('[data-destroy]');
+const boxesDiv = document.getElementById('boxes');
 
 // Asignar escucha de evento click al botón de crear
 createButton.addEventListener('click', createBoxes);
@@ -13,15 +13,15 @@ destroyButton.addEventListener('click', destroyBoxes);
 
 // Función para crear los elementos div
 function createBoxes() {
-    var amount = parseInt(inputNumber.value); // Obtener la cantidad de elementos
+    const amount = parseInt(inputNumber.value); // Obtener la cantidad de elementos
     clearBoxes(); // Borrar cualquier elemento existente antes de crear nuevos
 
     // Crear los nuevos elementos div
-    for (var i = 0; i < amount; i++) {
-        var size = 30 + (i * 10); // Calculo el tamaño del div
-        var color = getRandomHexColor(); // Obtener un color aleatorio
+    for (let i = 0; i < amount; i++) {
+        const size = 30 + (i * 10); // Calculo el tamaño del div
+        const color = getRandomHexColor(); // Obtener un color aleatorio
 
-        var box = document.createElement('div');
+        const box = document.createElement('div');
         box.style.width = size + 'px';
         box.style.height = size + 'px';
         box.style.backgroundColor = color;

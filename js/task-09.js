@@ -1,11 +1,11 @@
 // Obtener los elementos necesarios
-var body = document.body;
-var colorSpan = document.querySelector('.color');
-var changeColorButton = document.querySelector('.change-color');
+const body = document.body;
+const colorSpan = document.querySelector('.color');
+const changeColorButton = document.querySelector('.change-color');
 
 // Función para cambiar el color de fondo del body y mostrar el valor de color en span
 function changeBackgroundColor() {
-    var randomColor = getRandomHexColor();
+    const randomColor = getRandomHexColor();
     body.style.backgroundColor = randomColor;
     colorSpan.textContent = randomColor;
 }
